@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="_5adamtna.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="5adamtna Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.3/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.3/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div class="super_container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <!-- Top Bar -->
+
+            <div class="top_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex flex-row">
+                            <div class="phone">+201001001001</div>
+                            <div class="social">
+                                <ul class="social_list">
+                                  <%--  <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>--%>
+                                    <li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                   <%-- <li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>--%>
+                                    <%--<li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>--%>
+                                    <li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+
+                            </div>
+
+                            <%-- Language --%>
+                           <%-- <div class="user_box ml-auto">
+                                <div class="user_box_login user_box_link"><a href="Apply Now.aspx">English</a></div>
+                                <div class="user_box_register user_box_link"><a href="Apply Now Arabic.aspx">العربية</a></div>
+                            </div>--%>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+
+            <nav class="main_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+
+                            <div class="hamburger">
+                                <i class="fa fa-bars trans_200"></i>
+                            </div>
+
+                            <div class="main_nav_container ml-auto">
+                                <ul class="main_nav_list">
+                                <li class="main_nav_item"><a href="#blog">مدونتنا</a></li>
+                                    <li class="main_nav_item"><a href="#about">من نحن</a></li>
+                                    <li class="main_nav_item"><a href="#paper">الأوراق المطلوبة</a></li>      
+                                    <li class="main_nav_item"><a href="Request.aspx">طلب جديد</a></li>
+                                    <li class="main_nav_item"><a href="Home.aspx">الصفحة الرئيسية</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="logo_container">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="images/logo.png" alt="">5adamtna</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-4 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_content footer_about">
+                                <div class="logo_container footer_logo">
+                                    <div class="logo">
+                                        <a href="#">
+                                            <img src="images/logo.png" alt="">خدمتنا</a>
+                                    </div>
+                                </div>
+                                <p class="footer_about_text">أنشأت شركة "خدمتنا للخدمات الحكومية" بموجب تصريح من وزارة الدولة للتنمية الإدارية لتحقق رسالة الإدارة العامة لمقدمي الخدمات الحكومية و تحقيق مهمتها ألا و هي المساعدة في تطوير و تطبيق صناعة تقديم الخدمات الحكومية بهدف توفير الوقت والإدارة للمؤسسات و الشركات الخاصة و الأفراد مع كافة الوزارات والدوائر الحكومية </p>
+                                <ul class="footer_social_list">
+                                    <li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    <li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column -->
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-4 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">Tags</div>
+                            <div class="footer_content footer_tags">
+                                <ul class="tags_list clearfix">
+                                    <li class="tag_item"><a href="#">جواز السفر</a></li>
+                                    <li class="tag_item"><a href="#">سفر</a></li>
+                                    <li class="tag_item"><a href="#">مطار</a></li>
+                                    <li class="tag_item"><a href="#">طيارة</a></li>
+                                    <li class="tag_item"><a href="#">أمان</a></li>
+                                    <li class="tag_item"><a href="#">سرعة</a></li>
+                                    <li class="tag_item"><a href="#">مغامرة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-4 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">اتصل بنا</div>
+                            <div class="footer_content footer_contact">
+                                <ul class="contact_info_list">
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div>
+                                            <div class="contact_info_icon">
+                                                <img src="images/placeholder.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="contact_info_text">4127 Cairo-Egypt</div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div>
+                                            <div class="contact_info_icon">
+                                                <img src="images/phone-call.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="contact_info_text">+201001001001</div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div>
+                                            <div class="contact_info_icon">
+                                                <img src="images/message.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div>
+                                            <div class="contact_info_icon">
+                                                <img src="images/planet-earth.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="contact_info_text"><a href="">FUE Group</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 order-lg-1 order-2  ">
+                        <div class="copyright_content d-flex flex-row align-items-center">
+                            <div>
+                                Copyright &copy; All rights reserved | This Website is made with <i class="fa fa-heart-o" aria-hidden="true"></i>by <a href="" target="_blank">FUE Group</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+   
+</body>
+</html>
